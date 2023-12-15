@@ -3,7 +3,7 @@ version: "3.8"
 services:
 
   frontend:
-    image: qceka88/frontend:v01
+    image: qceka88/frontend:latest
     container_name: frontend
     build:
       dockerfile: frontend/Dockerfile
@@ -17,7 +17,7 @@ services:
     restart: on-failure
 
   backend:
-    image: qceka88/backend:v01
+    image: qceka88/backend:latest
     container_name: backedn
     build:
       dockerfile: backend/Dockerfile
