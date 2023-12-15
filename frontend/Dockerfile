@@ -5,8 +5,8 @@ FROM node:lts-buster AS development
 WORKDIR /usr/src/app
 
 # Copy dependency definitions
-COPY frontend/package.json /usr/src/app
-COPY frontend/package-lock.json /usr/src/app
+COPY package.json /usr/src/app
+COPY package-lock.json /usr/src/app
 
 # Install dependecies
 #RUN npm set progress=false \
